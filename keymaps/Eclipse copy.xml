@@ -1,0 +1,9 @@
+<keymap version="1" name="Eclipse copy" parent="Eclipse">
+  <action id="CompareTwoFiles" />
+  <action id="Console.TableResult.CloneRow" />
+  <action id="Console.TableResult.DeleteRows" />
+  <action id="Diff.ShowDiff" />
+  <action id="EditorDeleteLine" />
+  <action id="FileChooser.GotoDesktop" />
+  <action id="SendEOF" />
+</keymap>
