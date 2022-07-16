@@ -1,6 +1,8 @@
 <application>
   <component name="AppStorage">
     <histories>
+      <item value="IMPORTANT RocksDBStateBackend is deprecated in favor of EmbeddedRocksDBStateBackend. and org.apache.flink.runtime.state.storage.FileSystemCheckpointStorage. This change does not affect the runtime characteristics of your Jobs and is simply an API change to help better communicate the ways Flink separates local state storage from fault tolerance. Jobs can be upgraded without loss of state. If configuring your state backend via the StreamExecutionEnvironment please make the following changes. StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment(); env.setStateBackend(new EmbeddedRocksDBStateBackend()); env.getCheckpointConfig().setCheckpointStorage(&quot;hdfs:checkpoints&quot;); If you are configuring your state backend via the flink-conf.yaml no changes are required. A State Backend that stores its state in RocksDB. This state backend can store very large state that exceeds memory and spills to disk. All keyvalue state (including windows) is stored in the keyvalue index of RocksDB. For persistence against loss of machines, checkpoints take a snapshot of the RocksDB database, and persist that snapshot in a file system (by default) or another configurable state backend. The behavior of the RocksDB instances can be parametrized by setting RocksDB Options using the methods setPredefinedOptions(PredefinedOptions) and setRocksDBOption" />
+      <item value="Creates a new memory state backend that accepts states whose serialized forms are up to the given number of bytes. Checkpoint and default savepoint locations are used as specified in the runtime configuration. WARNING: Increasing the size of this value beyond the default value (5242880) should be done with care. The checkpointed state needs to be send to the JobManager via limited size RPC messages, and there and the JobManager needs to be able to hold all aggregated state in its memory. Params: maxStateSize – The maximal size of the serialized state" />
       <item value="A handler for rejected tasks that runs the rejected task directly in the calling thread of the execute method, unless the executor has been shut down, in which case the task is discarded." />
       <item value="A handler for rejected tasks that discards the oldest unhandled request and then retries execute, unless the executor is shut down, in which case the task is discarded." />
       <item value="A handler for rejected tasks that silently discards the rejected task." />
@@ -10,8 +12,8 @@
     </histories>
     <option name="languageScores">
       <map>
-        <entry key="CHINESE" value="6" />
-        <entry key="ENGLISH" value="7" />
+        <entry key="CHINESE" value="8" />
+        <entry key="ENGLISH" value="9" />
       </map>
     </option>
   </component>
