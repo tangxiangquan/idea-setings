@@ -1,7 +1,10 @@
 <application>
   <component name="LocalDatabaseDriverManager" version="201">
     <driver id="clickhouse">
+      <remarks>use_time_zone</remarks>
       <artifact id="ClickHouse" name="ClickHouse" use="true" version="0.3.1" />
+      <property name="use_time_zone" value="UTC+8" />
+      <property name="use_server_time_zone" value="false" />
     </driver>
     <driver id="hive">
       <artifact id="Hive" name="Hive" use="true" version="3.1.2" />
