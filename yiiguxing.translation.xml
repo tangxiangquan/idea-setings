@@ -1,0 +1,23 @@
+<application>
+  <component name="AppStorage">
+    <histories>
+      <item value="IMPORTANT RocksDBStateBackend is deprecated in favor of EmbeddedRocksDBStateBackend. and org.apache.flink.runtime.state.storage.FileSystemCheckpointStorage. This change does not affect the runtime characteristics of your Jobs and is simply an API change to help better communicate the ways Flink separates local state storage from fault tolerance. Jobs can be upgraded without loss of state. If configuring your state backend via the StreamExecutionEnvironment please make the following changes. StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment(); env.setStateBackend(new EmbeddedRocksDBStateBackend()); env.getCheckpointConfig().setCheckpointStorage(&quot;hdfs:checkpoints&quot;); If you are configuring your state backend via the flink-conf.yaml no changes are required. A State Backend that stores its state in RocksDB. This state backend can store very large state that exceeds memory and spills to disk. All keyvalue state (including windows) is stored in the keyvalue index of RocksDB. For persistence against loss of machines, checkpoints take a snapshot of the RocksDB database, and persist that snapshot in a file system (by default) or another configurable state backend. The behavior of the RocksDB instances can be parametrized by setting RocksDB Options using the methods setPredefinedOptions(PredefinedOptions) and setRocksDBOption" />
+      <item value="Creates a new memory state backend that accepts states whose serialized forms are up to the given number of bytes. Checkpoint and default savepoint locations are used as specified in the runtime configuration. WARNING: Increasing the size of this value beyond the default value (5242880) should be done with care. The checkpointed state needs to be send to the JobManager via limited size RPC messages, and there and the JobManager needs to be able to hold all aggregated state in its memory. Params: maxStateSize – The maximal size of the serialized state" />
+      <item value="A handler for rejected tasks that runs the rejected task directly in the calling thread of the execute method, unless the executor has been shut down, in which case the task is discarded." />
+      <item value="A handler for rejected tasks that discards the oldest unhandled request and then retries execute, unless the executor is shut down, in which case the task is discarded." />
+      <item value="A handler for rejected tasks that silently discards the rejected task." />
+      <item value="A handler for rejected tasks that throws a RejectedExecutionException." />
+      <item value="Converts the given Table into a DataStream of add and retract messages. The message will be encoded as Tuple2. The first field is a Boolean flag, the second field holds the record of the specified type T. A true Boolean flag indicates an add message, a false flag indicates a retract message. The fields of the Table are mapped to DataStream fields as follows: Row and org.apache.flink.api.java.tuple.Tuple types: Fields are mapped by position, field types must match. POJO DataStream types: Fields are mapped by field name, field types must match. Deprecated Use toChangelogStream(Table, Schema) instead. It integrates with the new type system and supports all kinds of DataTypes and every ChangelogMode that the table runtime can produce. Params: table – The Table to convert. clazz – The class of the requested record type. Type parameters: &lt;T&gt; – The type of the requested record type. Returns: The converted DataStream." />
+      <item value="Sets the Blink planner as the required module. This is the default behavior. Deprecated The old planner has been removed in Flink 1.14. Since there is only one planner left (previously called the 'blink' planner), this setting is obsolete and will be removed in future versions." />
+    </histories>
+    <option name="languageScores">
+      <map>
+        <entry key="CHINESE" value="8" />
+        <entry key="ENGLISH" value="9" />
+      </map>
+    </option>
+  </component>
+  <component name="Cache">
+    <option name="lastTrimTime" value="1657858617508" />
+  </component>
+</application>
