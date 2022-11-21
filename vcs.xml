@@ -66,9 +66,13 @@
           <option name="url" value="https://gitee.com/lemur/easypoi-test.git" />
           <option name="userName" value="" />
         </UrlAndUserName>
+        <UrlAndUserName>
+          <option name="url" value="http://192.168.81.218/tang/baida-report.git" />
+          <option name="userName" value="" />
+        </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="C:\code" />
+    <option name="cloneParentDir" value="D:\total" />
   </component>
   <component name="Vcs.Log.App.Settings">
     <option name="COLUMN_ID_ORDER">
