@@ -1,6 +1,7 @@
 <application>
   <component name="FileTypeManager" version="18">
     <extensionMap>
+      <mapping ext="1669379313" type="PLAIN_TEXT" />
       <mapping ext="pcap" type="PLAIN_TEXT" />
       <mapping ext="rules" type="PLAIN_TEXT" />
       <removed_mapping ext="apk" approved="true" type="ARCHIVE" />
